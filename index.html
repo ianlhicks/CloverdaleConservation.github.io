@@ -53,15 +53,7 @@
     .modal-footer button {
       color: #fff; /* White text for modal buttons */
     }
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: var(--primary-color);
-        color: white;
-        text-align: center;
-    }
+    
   </style>
 </head>
 <body>
@@ -125,6 +117,9 @@
         </button>
         <button type="button" class="btn btn-primary d-lg-none mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal4">
           Scores
+        </button>
+        <button type="button" class="btn btn-primary d-lg-none mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+          Member Information
         </button>
       </div>
 
@@ -234,14 +229,33 @@
           </div>
         </div>
       </div>
+
+
+      <!-- Modal 5 -->
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel1">Member Information</h5>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="btn btn-primary d-lg-none mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                Member Rules
+              </button>
+              <button type="button" class="btn btn-primary d-lg-none mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                Member Sign-Up
+              </button>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+           </div>
+         </div>
+       </div>
       <!-- Repeat similar structure for other modals -->
 
     </div>
   </main>
-
-    <div class="footer bg-dark">
-        &copy; 2024 Maywind Consulting. All rights reserved.
-    </div>
 
 
   <!-- Bootstrap Bundle with Popper -->
